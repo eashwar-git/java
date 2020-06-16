@@ -1,6 +1,7 @@
 package com.java.basics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class JavaBasics {
@@ -10,18 +11,22 @@ public class JavaBasics {
 		System.out.println("Given Numbers list:" +JavaBasics.getGivenList());
 		
 		List<Integer> lstEvenDouble = JavaBasics.getEvenDoubleList(lstOfNumbers);
+		Collections.sort(lstEvenDouble);
 		System.out.println("Even double list:" +lstEvenDouble);
 		
 	}
 	
 	public static ArrayList<Integer> getGivenList(){
 		ArrayList<Integer> lstOfNumbers = new ArrayList<Integer> ();
-		lstOfNumbers.add(1);
+		
 		lstOfNumbers.add(2);
-		lstOfNumbers.add(3);
-		lstOfNumbers.add(4);
-		lstOfNumbers.add(5);
 		lstOfNumbers.add(6);
+		lstOfNumbers.add(4);
+		lstOfNumbers.add(3);
+		lstOfNumbers.add(8);
+		lstOfNumbers.add(5);
+		lstOfNumbers.add(9);
+		lstOfNumbers.add(12);
 		return lstOfNumbers;
 	}
 	
