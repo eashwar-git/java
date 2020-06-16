@@ -7,7 +7,6 @@ public class DemoInterfaceTest {
 		try {
 			Class.forName("com.java.basics.DemoImpl");
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
