@@ -61,11 +61,20 @@ public class LamdaExpTest {
 				
 				
 				
+// 5. GenericInterface 			
+		GenericInterface<String>	gi = 	new GenericInterface<String>(){
+			public String func(String t) {
+				return t.toLowerCase();
+			}
+			
+		};
+		
+		System.out.println("with Anonymous inner class impl: " +gi.func("EASHWAR"));
 				
-				
-				
-				
-				
+		// through Lamda expression		
+		GenericInterface<String>	giL = 	(t)->  t.toLowerCase();	
+		System.out.println("with Lambda expression :"+giL.func("EaShWaR"));
+					
 
 	}
 }
